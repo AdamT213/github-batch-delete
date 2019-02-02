@@ -1,0 +1,43 @@
+{
+  "name": "github-batch-delete",
+  "version": "1.0.0",
+  "description": "A utility for deleting old github repositories en masse via the Github API",
+  "main": "index.js",
+  "scripts": {
+    "test": "export NODE_ENV=testing; mocha --recursive -R mocha-multi --reporter-options spec=-,json=.results.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdamT213/github-batch-delete.git"
+  },
+  "keywords": [
+    "github",
+    "API",
+    "delete",
+    "repository"
+  ],
+  "author": "Adam Tropp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdamT213/github-batch-delete/issues"
+  },
+  "homepage": "https://github.com/AdamT213/github-batch-delete#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^5.12.1",
+    "mocha": "^5.2.0",
+    "mocha-jsdom": "^2.0.0",
+    "mocha-multi": "^1.0.1",
+    "supertest": "^3.1.0",
+    "dotenv": "^6.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "jsdom": "^11.11.0",
+    "knex": "^0.15.1",
+    "lodash": "^4.17.10",
+    "pg": "^7.4.3"
+  }
+}
